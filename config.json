@@ -1,0 +1,60 @@
+{
+    "nick": "boogerbot",
+    "channels": [ "#boogerbot" ],
+    
+    "dispatch": [
+        {
+            "match": "^source$",
+            "say": "https://github.com/infrared/ciscostudy-bot"
+        },
+        {
+            "match": "^\\!?help$",
+            "say": "https://github.com/infrared/ciscostudy-bot"
+        },
+        {
+            "match": "^([0-1])+$",
+            "module": "conversion",
+            "func": "binary"
+        },
+        {
+            "match": "^0x([0-9a-fA-F]+)$",
+            "module": "conversion",
+            "func": "hex"
+        },
+        {
+            "match": "^([0-1]+)\\s?\\&\\s?([0-1]+)$",
+            "module": "conversion",
+            "func": "bwAnd"
+        },
+        {
+            "match": "^certs$",
+            "module": "ciscostudy",
+            "func": "distinctCerts"
+        },
+        {
+            "match": "^count\\s(\\w+)$",
+            "module": "ciscostudy",
+            "func": "countCert"
+        },
+        {
+            "match": "^count\\s(\\w+)\\s(\\w+)$",
+            "module": "ciscostudy",
+            "func" : "countCertType"
+        },
+        {
+            "match": "^(\\w+)\\stopics$",
+            "module": "ciscostudy",
+            "func" : "certTopics"
+        },
+        {
+            "match": "^quiz\\s([\\w\\-]+)$",
+            "module": "ciscostudy",
+            "func": "quizRandom"
+        },
+        {
+            "match": "(.*)\\?$",
+            "module": "ciscostudy",
+            "func": "quizAnswer"
+        }
+    ]
+}
