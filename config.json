@@ -52,9 +52,19 @@
             "func": "quizRandom"
         },
         {
+            "match": "^quiz\\s+([\\w\\-]+)\\s+(\\w+)$",
+            "module": "ciscostudy",
+            "func": "quizTopic"
+        },
+        {
             "match": "(.*)\\?$",
             "module": "ciscostudy",
             "func": "quizAnswer"
+        },
+        {
+            "match": "^i give up$",
+            "module": "ciscostudy",
+            "func": "giveUp"
         }
     ]
 }

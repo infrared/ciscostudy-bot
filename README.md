@@ -1,4 +1,4 @@
-#####Bot Commands#####
+####Bot Commands####
 
 ######IP Calculations######
 
@@ -23,30 +23,42 @@
 
 ***Count database entries***
 
-Syntax: count *cert name*
+Syntax: count &lt;*cert*&gt; &lt;[topic]&gt;
 
 Example:
 
     <user> count icnd1
     <bot> 354
+    
+    <user> count icnd1 routing
+    <bot> 125
    
 ***Get cert topics***
 
-Syntax: *cert name* topics
+Syntax: &lt;*cert*&gt; topics
 
 Example:
 
-    <user> icnd1 topics
-    <bot> ios, security, subnetting
+    <user> topics icnd1
+    <bot> ios, security, subnetting, routing
 
-***Start random quiz***
+***Start quiz with a random topic***
 
-Syntax: quiz *cert name*
+Syntax: quiz &lt;*cert*&gt;
 
 Example:
 
     <user> quiz icnd1
     <bot> How do you enable RIP routing?
+
+***Start quiz with a specific topic***
+
+Syntax: quiz &lt;*cert*&gt;
+
+Example:
+
+    <user> quiz icnd1 security
+    <bot> This command tells the IOS to prompt for a password
 
 ***Answer the quiz***
 
@@ -54,8 +66,15 @@ Be sure to include a ***?*** at the end of your answer
 
 Example:
 
+    <user> quiz icnd1
+    <bot> How do you enable RIP routing?
     <user> router rip?
     <bot> good job
 
+***Don't know the answer?***
+
+    <bot> How do you enable RIP routing?
+    <user> i give up
+    <bot> router rip
 
 
