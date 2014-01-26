@@ -65,6 +65,16 @@
             "match": "^i give up$",
             "module": "ciscostudy",
             "func": "giveUp"
+        },
+        {
+            "match": "^(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\/\\d{1,2})$",
+            "module": "ipcalc",
+            "func": "process"
+        },
+        {
+            "match": "^next\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\/\\d{1,2})$",
+            "module": "ipcalc",
+            "func" : "processNext"
         }
     ]
 }

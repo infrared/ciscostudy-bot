@@ -2,6 +2,14 @@
 
 ######IP Calculations######
 
+***subnetting***
+
+    <user> 192.168.10.5/24
+    <bot> subnet: 192.168.10.0, mask: 255.255.255.0, broacast: 192.168.10.255, first: 192.168.10.1, last: 192.168.10.254
+    
+    <user> next 192.168.10.5/24
+    <bot> subnet: 192.168.11.0, mask: 255.255.255.0, broacast: 192.168.11.255, first: 192.168.11.1, last: 192.168.11.254
+
 ***binary***
 
     <user> 1010
