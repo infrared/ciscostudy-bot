@@ -6,6 +6,7 @@ var modules = { };
 modules.conversion = require('./lib/conversion.js');
 modules.ciscostudy = require('./lib/ciscostudy.js');
 modules.ipcalc     = require('./lib/ipcalc.js');
+modules.calc       = require('./lib/calc.js');
 
 var client = new irc.Client('irc.freenode.net',
     config.nick,
